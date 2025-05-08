@@ -1,0 +1,44 @@
+.service-card {
+    border-radius: 1rem; /* Rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #00695c;
+}
+
+.service-card:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.service-card i {
+    color: #00695c; /* Custom color for icons */
+}
+
+.service-card h3 {
+    font-weight: bold;
+    color: #333;
+}
+
+.service-card p {
+    color: #555;
+}
+
+.btn-link {
+    color: #00695c;
+    text-decoration: none;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+}
+
+.btn-outline-primary{
+    background-color: #00695c;
+    color: #fff;
+    border: 1px solid #00695c;
+}
+
+.btn-outline-primary:hover{
+    border: 1px solid #00695c;
+    background:none;
+    color: #00695c;
+}

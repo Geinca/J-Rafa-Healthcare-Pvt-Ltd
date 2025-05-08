@@ -1,0 +1,18 @@
+/* Hero Section */
+.hero-section {
+    padding: 10px 0;
+    background-color: #f8f9fa;
+}
+
+
+.hero-section h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #1a5276;
+}
+
+.hero-section p.lead {
+    font-size: 20px;
+    margin-bottom: 30px;
+}

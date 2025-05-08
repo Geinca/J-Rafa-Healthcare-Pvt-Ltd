@@ -1,0 +1,64 @@
+/* Top Bar */
+.top-bar {
+    background-color: #0B5C4A;
+    color: #fff;
+    font-size: 14px;
+}
+
+.top-bar span {
+    display: inline-block;
+    padding: 0 10px;
+    font-weight: 500;
+}
+
+.top-bar i {
+    color: #FFD700;
+}
+
+/* Navigation */
+.navbar {
+    padding: 12px 0;
+    background-color: #fff;
+    border-bottom: 2px solid #eee;
+}
+
+.navbar-brand img {
+    max-height: 50px;
+}
+
+.nav-link {
+    font-weight: 500;
+    padding: 8px 15px !important;
+    color: #333;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    margin: 0 15px;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #0B5C4A;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.header-appointment-btn {
+    background-color: #0B5C4A;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.header-appointment-btn:hover {
+    background: transparent;
+    border: 1px solid #06493b;
+    color: #06493b;
+}
+
+@media (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .header-appointment-btn {
+        margin-top: 10px;
+    }
+}

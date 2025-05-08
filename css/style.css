@@ -1,0 +1,93 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.breadcrumb .active{
+    color: #FFD700;
+}
+
+/* Doctors Section */
+.doctor-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.doctor-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.doctor-card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background: #f8f9fa;
+    border-radius: 50%;
+    margin: 0 5px;
+    color: #1a5276;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: #1a5276;
+    color: #fff;
+}
+
+/* Contact Section */
+.contact-form {
+    border-radius: 10px;
+}
+
+.icon-box {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background: rgba(35, 108, 92, 0.1);
+    border-radius: 50%;
+    margin-right: 10px;
+    color: #236C5C;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background: #236C5C;
+    color: white;
+}
+
+.social-icons a i,
+.list-unstyled i{
+    color:#FFD700;
+}
