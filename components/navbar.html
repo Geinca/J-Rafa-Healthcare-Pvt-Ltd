@@ -33,13 +33,49 @@
                     <a class="nav-link" href="services.html">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="doctors.html">Doctors</a>
+                    <a class="nav-link" href="gallery.html">Gallery</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
                 </li>
             </ul>
-            <a href="../contact.html" class="btn header-appointment-btn ms-lg-3">Appointment</a>
+            <!-- Appointment Button with Modal Trigger -->
+            <button class="btn header-appointment-btn ms-lg-3" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+                Appointment
+            </button>
         </div>
     </div>
 </nav>
+
+<!-- Appointment Modal -->
+<div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="appointmentModalLabel">Book an Appointment</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="date" class="form-label">Appointment Date</label>
+                        <input type="date" class="form-control" id="date" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

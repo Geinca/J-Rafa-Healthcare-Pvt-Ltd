@@ -6,6 +6,8 @@ fetch("./components/navbar.html")
     });
 
 
+    
+
 // hero
 fetch("./components/hero.html")
     .then(response => response.text())
@@ -29,32 +31,20 @@ fetch("./components/services.html")
     });
 
 
+// gallery
+fetch("./components/gallery.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("gallery").innerHTML = data;
+    });
+
+
 // footer
 fetch("./components/footer.html")
     .then(response => response.text())
     .then(data => {
       document.getElementById("footer").innerHTML = data;
     });
-
-// counter animation
-document.addEventListener("DOMContentLoaded", () => {
-    const counters = document.querySelectorAll(".counter");
-    counters.forEach(counter => {
-        const updateCount = () => {
-            const target = +counter.getAttribute("data-target");
-            const count = +counter.innerText;
-            const increment = target / 100;
-
-            if (count < target) {
-                counter.innerText = Math.ceil(count + increment);
-                setTimeout(updateCount, 20);
-            } else {
-                counter.innerText = target;
-            }
-        };
-        updateCount();
-    });
-});
 
 // about
 fetch("./components/about.html")
@@ -63,12 +53,5 @@ fetch("./components/about.html")
       document.getElementById("about").innerHTML = data;
     });
 
-
-// doctors
-fetch("./components/team.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("team").innerHTML = data;
-    });
 
 

@@ -23,7 +23,7 @@
 }
 
 .navbar-brand img {
-    max-height: 50px;
+    max-height: 75px;
 }
 
 .nav-link {
@@ -53,6 +53,33 @@
     border: 1px solid #06493b;
     color: #06493b;
 }
+
+.modal-header {
+    background-color: #06493b;
+    color: white;
+}
+
+.modal-title {
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-content {
+    border-radius: 8px;
+}
+
+.btn-primary {
+    background-color: #06493b;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #06493b;
+}
+
 
 @media (max-width: 767px) {
     .navbar-nav {

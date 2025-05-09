@@ -20,7 +20,8 @@
     <link rel="stylesheet" href="css/counter.css">
     <!-- services CSS -->
     <link rel="stylesheet" href="css/services.css">
-   
+    <!-- gallery CSS -->
+    <link rel="stylesheet" href="css/gallery.css">
     <!-- footer CSS -->
     <link rel="stylesheet" href="css/footer.css">
 </head>
@@ -29,15 +30,43 @@
 
     <div id="navbar"></div>
     <div id="hero"></div>
+    <div id="about"></div>
     <div id="counter"></div>
     <div id="services"></div>
-    <div id="team"></div>
+    <div id="gallery"></div>
     <div id="footer"></div>
 
+   
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
     <script src="js/main.js"></script>
+
+    <script>
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            const slides = document.querySelector('.slides');
+            const totalSlides = slides.children.length;
+
+            // Loop around if index out of bounds
+            if (index >= totalSlides) currentSlide = 0;
+            if (index < 0) currentSlide = totalSlides - 1;
+
+            // Slide transition
+            slides.style.transform = `translateX(${-currentSlide * 100}%)`;
+        }
+
+        function changeSlide(direction) {
+            currentSlide += direction;
+            showSlide(currentSlide);
+        }
+
+        // Auto slide every 3 seconds
+        setInterval(() => {
+            changeSlide(1);
+        }, 3000);
+    </script>
 
 </body>
 
