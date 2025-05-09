@@ -2,11 +2,13 @@
     background-color: #f8f9fa;
 }
 
-
-.gallery-item img {
+.gallery-item{
+    height: 200px !important;
+}
+.gallery-item a img {
     transition: transform 0.3s ease;
     cursor: pointer;
-    min-height: 180px;
+    height: 100%;
 }
 
 .gallery-item:hover img {
