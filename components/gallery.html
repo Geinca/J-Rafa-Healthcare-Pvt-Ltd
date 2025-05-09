@@ -10,32 +10,32 @@
             <!-- Gallery Item 1 -->
             <div class="col-md-3 col-sm-6">
                 <div class="gallery-item">
-                    <a href="../assets/img/doctor-1.avif" data-bs-toggle="modal" data-bs-target="#galleryModal">
-                        <img src="../assets/img/doctor-1.avif" alt="Gallery Image" class="img-fluid rounded">
+                    <a href="assets/img/doctor-1.avif" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="assets/img/doctor-1.avif" alt="Gallery Image" class="img-fluid rounded">
                     </a>
                 </div>
             </div>
-            <!-- Gallery Item 2 -->
+            <!-- Gallery Item 2 - Fixed -->
             <div class="col-md-3 col-sm-6">
                 <div class="gallery-item">
-                    <a href="../assets/img/doctor-2.avif" data-bs-toggle="modal" data-bs-target="#galleryModal">
-                        <img src="../assets/img/gallery/nurse-retirement-home-listening-old-sick-man-heart-bead-pensioner-lies-hospital-bed-1-1-scaled.jpg" alt="Gallery Image" class="img-fluid rounded">
+                    <a href="assets/img/gallery/nurse-retirement-home-listening-old-sick-man-heart-bead-pensioner-lies-hospital-bed-1-1-scaled.jpg" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="assets/img/gallery/nurse-retirement-home-listening-old-sick-man-heart-bead-pensioner-lies-hospital-bed-1-1-scaled.jpg" alt="Gallery Image" class="img-fluid rounded">
                     </a>
                 </div>
             </div>
             <!-- Gallery Item 3 -->
             <div class="col-md-3 col-sm-6">
                 <div class="gallery-item">
-                    <a href="../assets/img/doctor-3.avif" data-bs-toggle="modal" data-bs-target="#galleryModal">
-                        <img src="../assets/img/doctor-3.avif" alt="Gallery Image" class="img-fluid rounded">
+                    <a href="assets/img/doctor-3.avif" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="assets/img/doctor-3.avif" alt="Gallery Image" class="img-fluid rounded">
                     </a>
                 </div>
             </div>
             <!-- Gallery Item 4 -->
             <div class="col-md-3 col-sm-6">
                 <div class="gallery-item">
-                    <a href="../assets/img/doctor-4.avif" data-bs-toggle="modal" data-bs-target="#galleryModal">
-                        <img src="../assets/img/doctor-4.avif" alt="Gallery Image" class="img-fluid rounded">
+                    <a href="assets/img/doctor-4.avif" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        <img src="assets/img/doctor-4.avif" alt="Gallery Image" class="img-fluid rounded">
                     </a>
                 </div>
             </div>
@@ -52,22 +52,22 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body text-center">
-                <img id="modalImage" src="" alt="Gallery Image" class="img-fluid rounded">
+                <img id="modalImage" alt="Gallery Image" class="img-fluid rounded">
             </div>
         </div>
     </div>
 </div>
 
 <script>
-// Change modal image when a gallery item is clicked
-const galleryItems = document.querySelectorAll('.gallery-item a');
-const modalImage = document.getElementById('modalImage');
+        document.addEventListener('DOMContentLoaded', function () {
+            const galleryItems = document.querySelectorAll('.gallery-item a');
+            const modalImage = document.getElementById('modalImage');
 
-galleryItems.forEach(item => {
-    item.addEventListener('click', function (e) {
-        e.preventDefault();
-        const imageUrl = this.getAttribute('href');
-        modalImage.src = imageUrl;
-    });
-});
-</script>
+            galleryItems.forEach(item => {
+                item.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    modalImage.src = this.getAttribute('href');
+                });
+            });
+        });
+    </script>
